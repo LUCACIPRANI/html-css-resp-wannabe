@@ -92,7 +92,7 @@ img {
   }
 
   #lezioni h1{
-    font-size: 25px;
+    font-size: 22px;
     margin-bottom: 15%;
   }
 
@@ -143,7 +143,7 @@ img {
   }
 
   #steps h1{
-    font-size: 25px;
+    font-size: 22px;
   }
 
   #steps.container {
@@ -194,44 +194,47 @@ img {
     margin-top: 0;
     margin-bottom: 0;
     font-size: 12px;
+    padding: 2px;
     line-height: 1;
   }
 
   #why h1{
-    font-size: 25px;
+    font-size: 22px;
+    margin-bottom: -10px;
   }
 
   #why.container {
-    background-color: green;
+    background-color: #F2F2CD;
     display: flex;
   }
 
-  #why .row>.first, img {
-    width: 40%;
-    height: 40%;
-  }
-
-  #why .row>.second, img {
-    width: 40%;
-    height: 40%;
-  }
-
-  #why .row>.third, img {
-    width: 40%;
-    height: 40%;
+  #why .row>.first img,
+  #why .row>.second img,
+  #why .row>.third img   {
+    width: 20%;
   }
 
   #why .row>.first,
   #why .row>.second,
   #why .row>.third {
-    width: 100%;
+    width: 95%;
+    margin: auto;
+    margin-top: 12%;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #757575;
   }
 
-  .row::after {
-    content: '';
-    display: table;
-    clear: both;
+  #why .row>.third {
+    border: none;
   }
 
+  #why h3{
+    margin: 0;
+  }
+  
 }
 /* fine MEDIAQUERY why */
