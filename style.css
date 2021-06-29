@@ -73,7 +73,7 @@ img {
 }
 
 /* MEDIAQUERY lezioni */
-
+/* common */
 @media screen and (max-width: 420px) {
   * {
     margin: 0;
@@ -81,7 +81,9 @@ img {
     box-sizing: border-box;
   }
 
-  #lezioni .row {
+  #lezioni .row,
+  #steps .row,
+  #why .row {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -91,22 +93,36 @@ img {
     line-height: 1;
   }
 
-  #lezioni h1{
+  #lezioni h1,
+  #steps h1,
+  #why h1 {
     font-size: 22px;
-    margin-bottom: 15%;
+    margin-bottom: 0;
   }
 
-  #lezioni.container {
+  #lezioni h1 {
+    margin-bottom: 10%;
+  }
+
+  #lezioni.container,
+  #why.container {
     background-color: #F2F2CD;
     display: flex;
   }
 
+  #lezioni h3,
+  #steps h3,
+  #why h3 {
+    margin: 0;
+  }
+/* fine common */
+
+/* lezioni  */
   #lezioni .row>.left, img {
     display: block;
     object-fit: contain;
     width: 50%;
     height: 50%;
-
   }
 
   #lezioni .row>.right, img {
@@ -118,34 +134,15 @@ img {
 
   #lezioni .row>.left,
   #lezioni .row>.right {
-    width: 100%;  
+    width: 95%;  
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
   }
 
-  #lezioni h3{
-    margin: 0;
-  }
+/* fine lezioni  */
 
-/* fine MEDIAQUERY lezioni */
-
-/* MEDIAQUERY steps */
-
-  #steps .row {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 1%;
-    margin-bottom: 8%;
-    font-size: 12px;
-    line-height: 1;
-  }
-
-  #steps h1{
-    font-size: 22px;
-  }
-
+/* inizio steps  */
   #steps.container {
     background-color: #FFFFFF;
     display: flex;
@@ -179,35 +176,9 @@ img {
     align-items: center;
   }
 
-  #steps h3{
-    margin: 0;
-  }
+/* fine steps  */
 
-/* fine MEDIAQUERY steps */
-
-/* MEDIAQUERY why */
-
-  #why .row {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0;
-    margin-bottom: 0;
-    font-size: 12px;
-    padding: 2px;
-    line-height: 1;
-  }
-
-  #why h1{
-    font-size: 22px;
-    margin-bottom: -10px;
-  }
-
-  #why.container {
-    background-color: #F2F2CD;
-    display: flex;
-  }
-
+/* inizio why  */
   #why .row>.first img,
   #why .row>.second img,
   #why .row>.third img   {
@@ -232,9 +203,4 @@ img {
     border: none;
   }
 
-  #why h3{
-    margin: 0;
-  }
-  
-}
-/* fine MEDIAQUERY why */
+/* fine why  */
